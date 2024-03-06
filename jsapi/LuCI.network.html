@@ -819,6 +819,10 @@
             
                 <li data-name="LuCI.form.FlagValue##enabled"><a href="LuCI.form.FlagValue.html#enabled">enabled</a></li>
             
+                <li data-name="LuCI.form.FlagValue##tooltip"><a href="LuCI.form.FlagValue.html#tooltip">tooltip</a></li>
+            
+                <li data-name="LuCI.form.FlagValue##tooltipicon"><a href="LuCI.form.FlagValue.html#tooltipicon">tooltipicon</a></li>
+            
                 <li data-name="LuCI.form.FlagValue#datatype"><a href="LuCI.form.FlagValue.html#datatype">datatype</a></li>
             
                 <li data-name="LuCI.form.FlagValue#default"><a href="LuCI.form.FlagValue.html#default">default</a></li>
@@ -934,10 +938,6 @@
                 <li data-name="LuCI.form.GridSection#sortable"><a href="LuCI.form.GridSection.html#sortable">sortable</a></li>
             
                 <li data-name="LuCI.form.GridSection#tabbed"><a href="LuCI.form.GridSection.html#tabbed">tabbed</a></li>
-            
-                <li data-name="LuCI.form.GridSection#tooltip"><a href="LuCI.form.GridSection.html#tooltip">tooltip</a></li>
-            
-                <li data-name="LuCI.form.GridSection#tooltipicon"><a href="LuCI.form.GridSection.html#tooltipicon">tooltipicon</a></li>
             
                 <li data-name="LuCI.form.GridSection#uciconfig"><a href="LuCI.form.GridSection.html#uciconfig">uciconfig</a></li>
             
@@ -1545,12 +1545,6 @@
             
             <span class="subtitle">Members</span>
             
-                <li data-name="LuCI.form.TableSection##addbtntitle"><a href="LuCI.form.TableSection.html#addbtntitle">addbtntitle</a></li>
-            
-                <li data-name="LuCI.form.TableSection##addremove"><a href="LuCI.form.TableSection.html#addremove">addremove</a></li>
-            
-                <li data-name="LuCI.form.TableSection##anonymous"><a href="LuCI.form.TableSection.html#anonymous">anonymous</a></li>
-            
                 <li data-name="LuCI.form.TableSection##extedit"><a href="LuCI.form.TableSection.html#extedit">extedit</a></li>
             
                 <li data-name="LuCI.form.TableSection##max_cols"><a href="LuCI.form.TableSection.html#max_cols">max_cols</a></li>
@@ -1565,8 +1559,6 @@
             
                 <li data-name="LuCI.form.TableSection##sortable"><a href="LuCI.form.TableSection.html#sortable">sortable</a></li>
             
-                <li data-name="LuCI.form.TableSection##uciconfig"><a href="LuCI.form.TableSection.html#uciconfig">uciconfig</a></li>
-            
                 <li data-name="LuCI.form.TableSection#addbtntitle"><a href="LuCI.form.TableSection.html#addbtntitle">addbtntitle</a></li>
             
                 <li data-name="LuCI.form.TableSection#addremove"><a href="LuCI.form.TableSection.html#addremove">addremove</a></li>
@@ -1576,10 +1568,6 @@
                 <li data-name="LuCI.form.TableSection#parentoption"><a href="LuCI.form.TableSection.html#parentoption">parentoption</a></li>
             
                 <li data-name="LuCI.form.TableSection#tabbed"><a href="LuCI.form.TableSection.html#tabbed">tabbed</a></li>
-            
-                <li data-name="LuCI.form.TableSection#tooltip"><a href="LuCI.form.TableSection.html#tooltip">tooltip</a></li>
-            
-                <li data-name="LuCI.form.TableSection#tooltipicon"><a href="LuCI.form.TableSection.html#tooltipicon">tooltipicon</a></li>
             
                 <li data-name="LuCI.form.TableSection#uciconfig"><a href="LuCI.form.TableSection.html#uciconfig">uciconfig</a></li>
             
@@ -1742,10 +1730,6 @@
                 <li data-name="LuCI.form.TypedSection##anonymous"><a href="LuCI.form.TypedSection.html#anonymous">anonymous</a></li>
             
                 <li data-name="LuCI.form.TypedSection##tabbed"><a href="LuCI.form.TypedSection.html#tabbed">tabbed</a></li>
-            
-                <li data-name="LuCI.form.TypedSection##tooltip"><a href="LuCI.form.TypedSection.html#tooltip">tooltip</a></li>
-            
-                <li data-name="LuCI.form.TypedSection##tooltipicon"><a href="LuCI.form.TypedSection.html#tooltipicon">tooltipicon</a></li>
             
                 <li data-name="LuCI.form.TypedSection##uciconfig"><a href="LuCI.form.TypedSection.html#uciconfig">uciconfig</a></li>
             
@@ -3539,7 +3523,7 @@
     network
     </h2>
     
-        <div class="class-description"><p>The <code>LuCI.network</code> class combines data from multiple <code>ubus</code> apis to
+        <div class="class-description"><p>The <code>LuCI.network</code> class combines data from multiple <code>ubus</code> APIs to
 provide an abstraction of the current network configuration state.</p>
 <p>It provides methods to enumerate interfaces and devices, to query
 current configuration details and to manipulate settings.</p></div>
@@ -5017,7 +5001,7 @@ class instance describing the found hosts.</p>
     
     
     <div class="description">
-        <p>Obtains the the network device name of the given object.</p>
+        <p>Obtains the network device name of the given object.</p>
     </div>
     
 
@@ -5428,7 +5412,7 @@ describing all known networks.</td>
     
     
     <div class="description">
-        <p>Instantiates the given <a href="LuCI.network.Protocol.html"><code>Protocol</code></a> backend,
+        <p>Instantiates the given <a href="LuCI.network.Protocol.html"><code>Protocol</code></a> back-end,
 optionally using the given network name.</p>
     </div>
     
@@ -5487,7 +5471,7 @@ optionally using the given network name.</p>
                         
                     
                 
-                <p>The protocol backend to use, e.g. <code>static</code> or <code>dhcp</code>.</p></td>
+                <p>The protocol back-end to use, e.g. <code>static</code> or <code>dhcp</code>.</p></td>
         </tr>
 	
 	
@@ -5594,7 +5578,7 @@ without the need for an existing interface.</p></td>
                         
                     
             </td>
-            <td class="description last">Returns the instantiated protocol backend class or <code>null</code> if the given
+            <td class="description last">Returns the instantiated protocol back-end class or <code>null</code> if the given
 protocol isn't known.</td>
         </tr>
     
@@ -5629,7 +5613,7 @@ protocol isn't known.</td>
     
     <div class="description">
         <p>Obtains instances of all known <a href="LuCI.network.Protocol.html"><code>Protocol</code></a>
-backend classes.</p>
+back-end classes.</p>
     </div>
     
 
@@ -6087,7 +6071,7 @@ the given wireless radio.</p>
             
             <td class="description last">
                 
-                <p>The configuration name of the wireless radio to lookup, e.g. <code>radio0</code>
+                <p>The configuration name of the wireless radio to look up, e.g. <code>radio0</code>
 for the first mac80211 phy on the system.</p></td>
         </tr>
 	
@@ -6339,7 +6323,7 @@ the given wireless network.</p>
             
             <td class="description last">
                 
-                <p>The name of the wireless network to lookup. This may be either an uci
+                <p>The name of the wireless network to look up. This may be either an uci
 configuration section ID, a network ID in the form <code>radio#.network#</code>
 or a Linux network device name like <code>wlan0</code> which is resolved to the
 corresponding configuration section through <code>ubus</code> runtime information.</p></td>
@@ -6753,7 +6737,7 @@ else returns <code>false</code>.</td>
                         
                     
                 
-                <p>The netmask to convert into a bit count.</p></td>
+                <p>The netmask to convert into a bits count.</p></td>
         </tr>
 	
 	
@@ -7721,7 +7705,7 @@ rename could not be found.</td>
 <dd>
     
     <div class="description">
-        <p>Describes an swconfig switch topology by specifying the CPU
+        <p>Describes a swconfig switch topology by specifying the CPU
 connections and external port labels of a switch.</p>
     </div>
     
@@ -7800,7 +7784,7 @@ port is hardwired to.</p></td>
             
             <td class="description last"><p>The <code>ports</code> property points to an array describing the populated
 ports of the switch in the external label order. Each array item is
-an object containg the following keys:</p>
+an object containing the following keys:</p>
 <ul>
 <li><code>num</code> - the internal switch port number</li>
 <li><code>label</code> - the label of the port, e.g. <code>LAN 1</code> or <code>CPU (eth0)</code></li>
@@ -8732,7 +8716,7 @@ the driver.</p>
             
             
             
-            <td class="description last"><p>The powersafe mode for all non-peer neigbours, may be an empty
+            <td class="description last"><p>The powersafe mode for all non-peer neighbours, may be an empty
 string (<code>''</code>) or absent if not applicable or supported by the driver.</p>
 <p>The following modes are known:</p>
 <ul>
@@ -8996,7 +8980,7 @@ receiving rates.</p></td>
             
             
             
-            <td class="description last"><p>The amount of failed tranmission attempts. Only applicable to
+            <td class="description last"><p>The amount of failed transmission attempts. Only applicable to
 transmit rates.</p></td>
         </tr>
 	
@@ -9208,7 +9192,7 @@ HT or VHT rates.</p></td>
             
             
             
-            <td class="description last"><p>Specifies whether the tranmission rate used 40MHz wide channel.
+            <td class="description last"><p>Specifies whether the transmission rate used 40MHz wide channel.
 Only applicable to HT or VHT rates.</p>
 <p>Note: this option exists for backwards compatibility only and its
 use is discouraged. The <code>mhz</code> field should be used instead to
@@ -9418,7 +9402,7 @@ Only applicable to HE rates.</p></td>
     
     <div class="description">
         <p>A wireless scan result object describes a neighbouring wireless
-network found in the vincinity.</p>
+network found in the vicinity.</p>
     </div>
     
     
@@ -9682,7 +9666,7 @@ conjunction with <code>quality</code> to calculate a quality percentage.</p></td
         
 
         <footer>
-            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Tue Nov 15 2022 18:54:13 GMT+0000 (Coordinated Universal Time)
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Mar 06 2024 05:14:50 GMT+0000 (Coordinated Universal Time)
         </footer>
     </div>
 </div>
